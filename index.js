@@ -13,27 +13,27 @@ class App extends Component {
   }
 
   tensor = () => {
-    console.log(`tensor`)
+    console.log(`tensor, creating a matrix with 2 rows 3 columns`)
     const shape = [2, 3] // 2 rows, 3 columns
     const a = tf.tensor([1.0, 2.0, 3.0, 10.0, 20.0, 30.0], shape)
     a.print()    
   }
 
   tensorV2 = () => {
-    console.log(`tensorV2`)
+    console.log(`tensorV2, another method to create this matrix`)
     const b = tf.tensor([[1.0, 2.0, 3.0], [10.0, 20.0, 30.0]])
     b.print()
   }
 
   tensorSquare = () => {
-    console.log(`tensorSquare`)
+    console.log(`tensorSquare,squaring elements in the matrix`)
     const d = tf.tensor2d([[1.0, 2.0], [3.0, 4.0]])
     const d_squared = d.square()
     d_squared.print()
   }
 
   tensorAdd = () => {
-    console.log(`tensorAdd`)
+    console.log(`tensorAdd, adding elemnts of two matrix`)
     const e = tf.tensor2d([[1.0, 2.0], [3.0, 4.0]])
     const f = tf.tensor2d([[5.0, 6.0], [7.0, 8.0]])
 
